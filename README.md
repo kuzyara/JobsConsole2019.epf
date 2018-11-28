@@ -2,6 +2,8 @@
 
 КонсольЗаданий2019.epf __[Скачать (яндекс-диск)](https://yadi.sk/d/NaUFkD7DRy5RBg)__
 
+[![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]()
+
 Адаптация https://infostart.ru/public/57880/ для 8.3 
 * без модальных окон (РежимИспользованияМодальности = НеИспользовать)
 * тонкий и веб-клиент
