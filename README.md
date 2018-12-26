@@ -1,6 +1,6 @@
 # Консоль заданий для платформы 1С:8.3 
 
-КонсольЗаданий2019.epf __[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/download/1.0.0/JobsConsole2019.epf)__
+КонсольЗаданий2019.epf __[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/download/1.0.1/JobsConsole2019.epf)__
 
 [![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]()
 
