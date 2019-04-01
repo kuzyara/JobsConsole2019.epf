@@ -18,6 +18,7 @@
 
 ### Добавил типовую консоль запросов с конструктором для тонкого клиента, удобно когда лежат вместе:
 * добавил закладки для запросов
+__[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/download/1.0.2/QueryConsoleThinClient_8.3.5.epf)__
 ![image](https://user-images.githubusercontent.com/2604430/50132733-22f2fb00-02bb-11e9-8f59-a7e9ee058f05.png)
 
 Для декомпиляции использую __[precommit1c](https://github.com/xDrivenDevelopment/precommit1c)__, может быть перейду на edt.
