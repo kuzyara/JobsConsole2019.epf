@@ -343,7 +343,7 @@
 КонецПроцедуры
 
 ",
-{4,3,
+{4,4,
 {9,
 {1},0,"Объект",
 {1,0},
@@ -404,6 +404,25 @@
 {0,0},0,0,0,0,
 {0,0},
 {0,0}
+},
+{9,
+{4},0,"Реквизит1",
+{1,0},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
 },0,0,
 {#base64:77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxTZXR0
 aW5ncyB4bWxucz0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhLWNvbXBvc2l0aW9u
@@ -416,8 +435,7 @@ Oi8vdjguMWMucnUvOC4xL2RhdGEvdWkiIHhtbG5zOndlYj0iaHR0cDovL3Y4LjFj
 LnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93ZWIiIHhtbG5zOndpbj0iaHR0cDovL3Y4
 LjFjLnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93aW5kb3dzIiB4bWxuczp4cz0iaHR0
 cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDov
-L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPg0KCTxvdXRwdXRQ
-YXJhbWV0ZXJzLz4NCjwvU2V0dGluZ3M+}
+L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiLz4=}
 },
 {0,0},
 {0,1,
