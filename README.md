@@ -24,4 +24,4 @@ __[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/downl
 __[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/download/1.0.4/JobsConsole2019_1.0.4.zip)__
 ![image](https://user-images.githubusercontent.com/2604430/62603889-6f15ad00-b929-11e9-8be8-57a7852830f7.png)
 
-Для декомпиляции использую __[precommit1c](https://github.com/xDrivenDevelopment/precommit1c)__, может быть перейду на edt.
+Для декомпиляции использую __[precommit1c](https://github.com/xDrivenDevelopment/precommit1c)__
