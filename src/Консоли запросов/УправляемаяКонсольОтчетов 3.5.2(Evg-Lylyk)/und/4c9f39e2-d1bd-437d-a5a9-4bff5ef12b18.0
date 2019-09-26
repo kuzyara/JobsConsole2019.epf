@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- %1 -->
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+<dump create="false" type="0" prntscrn="false"/>
+<log location="%2" history="24">
+<event>
+  <eq property="name" value="db2"/>
+  <like property="context" value="%%УправляемаяКонсольОтчетов%%"/>
+</event>
+<event>
+  <eq property="name" value="dbmssql"/>
+  <like property="context" value="%%УправляемаяКонсольОтчетов%%"/>
+</event>
+<event>
+  <eq property="name" value="dbpostgrs"/>
+  <like property="context" value="%%УправляемаяКонсольОтчетов%%"/>
+</event>
+<event>
+  <eq property="name" value="dboracle"/>
+  <like property="context" value="%%УправляемаяКонсольОтчетов%%"/>
+</event>
+<event>
+  <eq property="name" value="SDBL"/>
+  <like property="context" value="%%УправляемаяКонсольОтчетов%%"/>
+</event>
+<event>
+  <eq property="name" value="DBV8DBEng"/>
+  <like property="context" value="%%УправляемаяКонсольОтчетов%%"/>
+</event>
+<property name="all"/>
+  <property name="sql"/>
+  <property name="plansqltext"/>
+</log>
+<plansql/>
+</config>
