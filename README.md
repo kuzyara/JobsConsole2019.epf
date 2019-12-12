@@ -2,7 +2,7 @@
 
 КонсольЗаданий2019.epf __[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/download/1.0.5/JobsConsole2019_1.0.5.zip)__
 
-[![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]() [![telegram](https://patrolavia.github.io/telegram-badge/chat.png)](https://teleg.run/kuzyara777)
 
 Адаптация https://infostart.ru/public/57880/ для 8.3 
 * без модальных окон (РежимИспользованияМодальности = НеИспользовать)
@@ -11,6 +11,11 @@
 * не зависает при открытии
 * режим совместимости 8.2
 * не требует БСП
+
+Константы для тюнинга на неперегруженных базах:
+* ФлагПолучатьПоследниеФоновые - включает получение всех значений для колонок Выполнилось и Состояние
+* ПолучитьИменаРегламентыхИзФоновых - разыменовывает сразу все идентификаторы фоновых заданий
+* ВыводитьФоновыеЗаПоследниеСек - период отбора по времени запуска фоновых (по-умолчанию час)
 
 ![image](https://user-images.githubusercontent.com/2604430/45608240-00fb9980-ba7c-11e8-979b-5e3b40f91e04.png)
 
