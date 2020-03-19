@@ -25,7 +25,7 @@
 __[Скачать](hhttps://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__
 ![image](https://user-images.githubusercontent.com/2604430/50132733-22f2fb00-02bb-11e9-8f59-a7e9ee058f05.png)
 
-### Добавил обработку по выводу структуры метаданных, удобно когда лежат вместе:
+### Обработка по выводу структуры метаданных
 * для УФ и ОФ
 __[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__
 ![image](https://user-images.githubusercontent.com/2604430/62603889-6f15ad00-b929-11e9-8be8-57a7852830f7.png)
