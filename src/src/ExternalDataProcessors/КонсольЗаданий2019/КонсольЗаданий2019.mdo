@@ -38,15 +38,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="2dcca15d-838d-4d87-a775-0c234c0178ef">
-    <name>ДиалогНастроекСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Диалог настроек списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="649c7ad0-644e-4fd5-9fad-b54f271275a1">
     <name>ДиалогОтбораРегламентногоЗадания</name>
     <synonym>
@@ -61,6 +52,15 @@
     <synonym>
       <key>ru</key>
       <value>Диалог отбора фонового задания</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2dcca15d-838d-4d87-a775-0c234c0178ef">
+    <name>ДиалогНастроекСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диалог настроек списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
