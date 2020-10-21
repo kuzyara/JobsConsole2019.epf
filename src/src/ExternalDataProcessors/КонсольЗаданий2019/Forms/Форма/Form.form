@@ -979,7 +979,7 @@
               <id>111</id>
               <title>
                 <key>ru</key>
-                <value>На сервере</value>
+                <value>На сервере (тонкий клиент)</value>
               </title>
               <visible>true</visible>
               <enabled>true</enabled>
