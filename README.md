@@ -41,9 +41,9 @@
 * для УФ и ОФ
 ФлагиОбщихМодулей.erf
 
-Выделяет желтым модули, флаги готорых не соответствуют стандарту ИТС
-https://1c-syntax.github.io/bsl-language-server/diagnostics/CommonModuleInvalidType/
-https://its.1c.ru/db/v8std/content/469/hdoc
+Выделяет модули, флаги готорых не соответствуют стандарту ИТС __[(1)](https://its.1c.ru/db/v8std/content/469/hdoc)__ __[(2)](https://1c-syntax.github.io/bsl-language-server/diagnostics/CommonModuleInvalidType/)__
+
+![image](https://user-images.githubusercontent.com/2604430/129529252-e7ae88e6-2afd-4638-a7d3-ba26d9470a61.png)
 
 При разработке общих модулей следует выбирать один из четырех контекстов выполнения кода:
 
@@ -53,8 +53,6 @@ https://its.1c.ru/db/v8std/content/469/hdoc
 | Серверный для вызова с клиента | ОбщегоНазначенияВызовСервера | + | + |   |   |  
 | Клиентский | ОбщегоНазначенияКлиент (или ОбщегоНазначенияГлобальный) |   |   |   | + | +
 | Клиент-серверный | ОбщегоНазначенияКлиентСервер |   | + | + | + | +|
-
-![image](https://user-images.githubusercontent.com/2604430/129529252-e7ae88e6-2afd-4638-a7d3-ba26d9470a61.png)
 
 ## Преобразователь имен таблиц из sql запроса в 1С
 * понимает запросы из технологического журнала
