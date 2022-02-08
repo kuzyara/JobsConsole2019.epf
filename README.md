@@ -2,7 +2,7 @@
 
 КонсольЗаданий2019.epf __[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__
 
-[![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]() [![telegram](https://patrolavia.github.io/telegram-badge/chat.png)](https://teleg.run/kuzyara777)
+[![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]() [![telegram](https://patrolavia.github.io/telegram-badge/chat.png)](https://teleg.run/KuzNikAl)
 
 Адаптация https://infostart.ru/public/57880/ для 8.3 
 * без модальных окон (РежимИспользованияМодальности = НеИспользовать)
