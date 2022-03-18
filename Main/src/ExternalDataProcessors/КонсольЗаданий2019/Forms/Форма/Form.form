@@ -2553,6 +2553,10 @@
         <items xsi:type="form:Button">
           <name>СписокФоновыхЗаданийОтборПоТекущему</name>
           <id>212</id>
+          <title>
+            <key>ru</key>
+            <value>По заданию/методу</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -2574,7 +2578,7 @@
             </extInfo>
           </extendedTooltip>
           <commandName>Form.Command.ОтборПоТекущему</commandName>
-          <representation>Auto</representation>
+          <representation>PictureAndText</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
@@ -3510,6 +3514,24 @@
         <value>Метод</value>
       </title>
       <id>11</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>МетаданныеИмя</name>
+      <title>
+        <key>ru</key>
+        <value>Метаданные имя</value>
+      </title>
+      <id>17</id>
       <valueType>
         <types>String</types>
         <stringQualifiers/>
