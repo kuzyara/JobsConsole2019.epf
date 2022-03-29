@@ -1,6 +1,6 @@
 # Консоль заданий для платформы 1С:8.3 
 
-КонсольЗаданий2019.epf __[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__
+КонсольЗаданий2019.epf __[Скачать архив](https://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__
 
 [![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]() [![telegram](https://patrolavia.github.io/telegram-badge/chat.png)](https://teleg.run/KuzNikAl)
 
@@ -27,21 +27,27 @@
 * теперь для заполнения колонок "Выполнялось" и "Состояние" при открытии даётся всего 200 мс, получение всех перенесено на кнопку обновления списка регламентных (результат замера выполения в подсказке заголовка этих колонок)
 * подчищены все замечания от новой версии bsl-ls плагина edt
 
-### Добавил типовую консоль запросов с конструктором для тонкого клиента, удобно когда лежат вместе:
+## Типовая консоль запросов с конструктором для тонкого клиента:
 * добавил закладки для запросов
-КонсольЗапросов_8.3.5(ИТС).epf __[Скачать архив](hhttps://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__ __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/КонсольЗаданий2019.epf)__
+* УФ
+
+`КонсольЗапросов_8.3.5(ИТС).epf` __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/КонсольЗапросов_8.3.5(ИТС).epf)__
 ![image](https://user-images.githubusercontent.com/2604430/50132733-22f2fb00-02bb-11e9-8f59-a7e9ee058f05.png)
 
-### Обработка по выводу структуры метаданных
+## Обработка по выводу структуры метаданных
 * для УФ и ОФ
-ВнутренняяСтруктураБД.epf __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/ВнутренняяСтруктураБД.epf)__
+* удобно искать таблицу/поле по внутреннему идентификатору
+
+`ВнутренняяСтруктураБД.epf` __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/ВнутренняяСтруктураБД.epf)__
+
 ![image](https://user-images.githubusercontent.com/2604430/62603889-6f15ad00-b929-11e9-8be8-57a7852830f7.png)
 
 ## Отчет по типам общих модулей и всех их Флагах
 * для УФ и ОФ
-ФлагиОбщихМодулей.erf __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/ФлагиОбщихМодулей.erf)__
+* периодически пригождается когда нужно найти все глобальные модули
+* выделяет модули, флаги готорых не соответствуют стандарту ИТС __[(1)](https://its.1c.ru/db/v8std/content/469/hdoc)__ __[(2)](https://1c-syntax.github.io/bsl-language-server/diagnostics/CommonModuleInvalidType/)__
 
-Выделяет модули, флаги готорых не соответствуют стандарту ИТС __[(1)](https://its.1c.ru/db/v8std/content/469/hdoc)__ __[(2)](https://1c-syntax.github.io/bsl-language-server/diagnostics/CommonModuleInvalidType/)__
+`ФлагиОбщихМодулей.erf` __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/ФлагиОбщихМодулей.erf)__
 
 ![image](https://user-images.githubusercontent.com/2604430/129529252-e7ae88e6-2afd-4638-a7d3-ba26d9470a61.png)
 
@@ -61,17 +67,20 @@
 * кеширование ранее расшифрованных ссылок
 * УФ и ОФ
 
-ПреобразовательИменТаблицSqlВ1С.epf __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/ПреобразовательИменТаблицSqlВ1С.epf)__
+`ПреобразовательИменТаблицSqlВ1С.epf` __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/ПреобразовательИменТаблицSqlВ1С.epf)__
+
 ![image](https://user-images.githubusercontent.com/2604430/129534878-3b10eafd-013e-4196-af25-8ee87392bc7c.png)
 
-## Консоль запросов 8.2 (www.chistov.spb.ru)
+## Консоль запросов 8.2
+* модификация на базе обработки Чистова
 * замер производительности и количество строк результата в дереве запросов
 * автосохранение и автовосстановление при краше (отладке)
 * параметры в отдельной вкладке
 * меню Файл -> Открыть последние выполненные
 * ОФ
 
-КонсольЗапросов_8.2(www.chistov.spb.ru).epf __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/КонсольЗапросов_8.2(www.chistov.spb.ru).epf)__
+`КонсольЗапросов_8.2(www.chistov.spb.ru).epf` __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/КонсольЗапросов_8.2(www.chistov.spb.ru).epf)__
+
 ![image](Main/QueryConcoleScreenshot.png?raw=true)
 
 Разработка ведётся по git-flow в edt
