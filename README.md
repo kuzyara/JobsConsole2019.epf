@@ -29,17 +29,17 @@
 
 ### Добавил типовую консоль запросов с конструктором для тонкого клиента, удобно когда лежат вместе:
 * добавил закладки для запросов
-КонсольЗапросов_8.3.5(ИТС).epf __[Скачать](hhttps://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__
+КонсольЗапросов_8.3.5(ИТС).epf __[Скачать архив](hhttps://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__ __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/КонсольЗаданий2019.epf)__
 ![image](https://user-images.githubusercontent.com/2604430/50132733-22f2fb00-02bb-11e9-8f59-a7e9ee058f05.png)
 
 ### Обработка по выводу структуры метаданных
 * для УФ и ОФ
-ВнутренняяСтруктураБД.epf __[Скачать](https://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__
+ВнутренняяСтруктураБД.epf __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/ВнутренняяСтруктураБД.epf)__
 ![image](https://user-images.githubusercontent.com/2604430/62603889-6f15ad00-b929-11e9-8be8-57a7852830f7.png)
 
 ## Отчет по типам общих модулей и всех их Флагах
 * для УФ и ОФ
-ФлагиОбщихМодулей.erf
+ФлагиОбщихМодулей.erf __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/ФлагиОбщихМодулей.erf)__
 
 Выделяет модули, флаги готорых не соответствуют стандарту ИТС __[(1)](https://its.1c.ru/db/v8std/content/469/hdoc)__ __[(2)](https://1c-syntax.github.io/bsl-language-server/diagnostics/CommonModuleInvalidType/)__
 
@@ -61,7 +61,17 @@
 * кеширование ранее расшифрованных ссылок
 * УФ и ОФ
 
-ПреобразовательИменТаблицSqlВ1С.epf
+ПреобразовательИменТаблицSqlВ1С.epf __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/ПреобразовательИменТаблицSqlВ1С.epf)__
 ![image](https://user-images.githubusercontent.com/2604430/129534878-3b10eafd-013e-4196-af25-8ee87392bc7c.png)
+
+## Консоль запросов 8.2 (www.chistov.spb.ru)
+* замер производительности и количество строк результата в дереве запросов
+* автосохранение и автовосстановление при краше (отладке)
+* параметры в отдельной вкладке
+* меню Файл -> Открыть последние выполненные
+* ОФ
+
+КонсольЗапросов_8.2(www.chistov.spb.ru).epf __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/Обработки/КонсольЗапросов_8.2(www.chistov.spb.ru).epf)__
+![image](Main/QueryConcoleScreenshot.png?raw=true)
 
 Разработка ведётся по git-flow в edt
