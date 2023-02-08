@@ -11,12 +11,22 @@
   <comment>https://github.com/kuzyara/JobsConsole2019.epf (c)Душелов'2009</comment>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="03ed91a2-d56a-422c-8411-70bd7d3b1a76"/>
   <defaultForm>ExternalDataProcessor.КонсольЗаданий2019.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <forms uuid="9d8e2bfe-5582-4c9e-baa1-1fe3d4ac0464">
     <name>Форма</name>
     <synonym>
       <key>ru</key>
       <value>Форма</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
@@ -35,6 +45,11 @@
       <key>ru</key>
       <value>Диалог фонового задания</value>
     </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>

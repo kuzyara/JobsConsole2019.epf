@@ -2,7 +2,7 @@
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <title>
     <key>ru</key>
-    <value>Регламентные и фоновые задания</value>
+    <value>Консоль заданий</value>
   </title>
   <items xsi:type="form:FormGroup">
     <name>РегламентныеЗадания</name>
@@ -1098,7 +1098,7 @@
           <extInfo xsi:type="form:ButtonGroupExtInfo"/>
         </items>
         <items xsi:type="form:Button">
-          <name>СписокРегламентныхЗаданийЖурналРегистрации1</name>
+          <name>СписокРегламентныхЗаданийЖурналРегистрации</name>
           <id>126</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1106,7 +1106,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокРегламентныхЗаданийЖурналРегистрации1РасширеннаяПодсказка</name>
+            <name>СписокРегламентныхЗаданийЖурналРегистрацииРасширеннаяПодсказка</name>
             <id>127</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1130,13 +1130,43 @@
           </picture>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
+        <items xsi:type="form:Button">
+          <name>СписокРегламентныхЗаданийСправкаGithub</name>
+          <id>223</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СписокРегламентныхЗаданийСправкаGithubРасширеннаяПодсказка</name>
+            <id>224</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.СправкаGithub</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <picture xsi:type="form:FormPicture"/>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <horizontalAlign>Left</horizontalAlign>
-        <autoFill>true</autoFill>
       </autoCommandBar>
       <handlers>
         <event>BeforeAddRow</event>
@@ -3811,8 +3841,8 @@
       </title>
       <id>6</id>
       <valueType>
-        <types>String</types>
-        <stringQualifiers/>
+        <types>Date</types>
+        <dateQualifiers/>
       </valueType>
       <view>
         <common>true</common>
@@ -3829,8 +3859,8 @@
       </title>
       <id>7</id>
       <valueType>
-        <types>String</types>
-        <stringQualifiers/>
+        <types>Date</types>
+        <dateQualifiers/>
       </valueType>
       <view>
         <common>true</common>
@@ -4337,6 +4367,27 @@
       <picture>StdPicture.GenerateReport</picture>
     </picture>
     <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>СправкаGithub</name>
+    <title>
+      <key>ru</key>
+      <value>Справка github</value>
+    </title>
+    <id>16</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Страница проекта</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>СправкаGithub</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
     <navigationPanel/>
