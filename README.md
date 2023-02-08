@@ -4,13 +4,15 @@
 
 [![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]() [![telegram](https://patrolavia.github.io/telegram-badge/chat.png)](https://teleg.run/KuzNikAl)
 
-Адаптация https://infostart.ru/public/57880/ для 8.3 
+Адаптация консоли Душелова для 8.3
 * без модальных окон (РежимИспользованияМодальности = НеИспользовать)
 * тонкий и веб-клиент
 * с редактированием параметров
 * не зависает при открытии
 * режим совместимости 8.2
 * не требует БСП
+
+Страница на инфостарте: https://infostart.ru/public/1242071/
 
 ![image](Main/JobConsole2019.gif?raw=true)
 
