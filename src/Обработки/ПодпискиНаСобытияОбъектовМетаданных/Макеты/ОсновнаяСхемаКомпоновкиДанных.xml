@@ -118,6 +118,48 @@
 				</valueType>
 				<appearance/>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОбщийТип</dataPath>
+				<field>ОбщийТип</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Общий тип</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СоставнойТип</dataPath>
+				<field>СоставнойТип</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Составной тип</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонкретныйТип</dataPath>
+				<field>КонкретныйТип</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Конкретный тип</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance/>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<objectName>ТЗ</objectName>
 		</dataSet>
@@ -142,20 +184,63 @@
 			<field>Обработчик</field>
 		</item>
 		<item xsi:type="SelectedItemField">
-			<field>НомерПодписки</field>
-			<lwsTitle>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>№подписки</v8:content>
-				</v8:item>
-			</lwsTitle>
-		</item>
-		<item xsi:type="SelectedItemField">
 			<field>НомерСобытия</field>
 			<lwsTitle>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>№события</v8:content>
+				</v8:item>
+			</lwsTitle>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<use>false</use>
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид типа подписки</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<use>false</use>
+				<field>КонкретныйТип</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Конкретный</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<use>false</use>
+				<field>СоставнойТип</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Составной</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<use>false</use>
+				<field>ОбщийТип</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Общий</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОбщийТип</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НомерПодписки</field>
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>№подписки</v8:content>
 				</v8:item>
 			</lwsTitle>
 		</item>
@@ -170,22 +255,28 @@
 			<orderType>Asc</orderType>
 		</item>
 		<item xsi:type="OrderItemField">
+			<field>ОбщийТип</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
 			<field>НомерПодписки</field>
 			<orderType>Asc</orderType>
 		</item>
 	</order>
 	<conditionalAppearance>
 		<item>
-			<selection>
-				<item>
-					<field>Обработчик</field>
+			<selection/>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ОбщийТип</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
 				</item>
-			</selection>
-			<filter/>
+			</filter>
 			<appearance>
 				<dcscor:item xsi:type="SettingsParameterValue">
-					<dcscor:parameter>Размещение</dcscor:parameter>
-					<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Cut</dcscor:value>
+					<dcscor:parameter>ЦветФона</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">web:Yellow</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</item>
@@ -218,7 +309,202 @@
 			<outputParameters/>
 		</item>
 	</item>
+	<item xsi:type="StructureItemGroup">
+		<name>Подвал</name>
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<outputParameters>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>МакетОформления</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">БезОформления</dcscor:value>
+			</dcscor:item>
+		</outputParameters>
+	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<template>
+			<name>Макет1</name>
+			<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>Номер события - это порядковый номер события обработчика в последовательности всех обработчиков:</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>ПорядокСобытий = Новый Соответствие;</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>ПорядокСобытий.Вставить("ОбработкаЗаполнения", 1);</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>ПорядокСобытий.Вставить("ОбработкаПроверкиЗаполения", 2);</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>ПорядокСобытий.Вставить("ПередЗаписью", 3);</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>ПорядокСобытий.Вставить("ПриУстановкеНовогоНомера", 4);</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>ПорядокСобытий.Вставить("ПриУстановкеНовогоКода", 4);</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>ПорядокСобытий.Вставить("ОбработкаУдаленияПроведения", 5);</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>ПорядокСобытий.Вставить("ПриЗаписи", 6);</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>ПорядокСобытий.Вставить("ОбработкаПроведения", 7);</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>Номер подписки - это порядковый номер подписки в дереве метаданных, начиная сверху вниз</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+				<dcsat:item xsi:type="dcsat:TableRow">
+					<dcsat:tableCell>
+						<dcsat:item xsi:type="dcsat:Field">
+							<dcsat:value xmlns:d8p1="http://v8.1c.ru/8.1/data/core" xsi:type="d8p1:LocalStringType">
+								<d8p1:item>
+									<d8p1:lang>ru</d8p1:lang>
+									<d8p1:content>Желтым выделены подписки с общим типом, которые выполняются после конкретных или составных</d8p1:content>
+								</d8p1:item>
+							</dcsat:value>
+						</dcsat:item>
+						<dcsat:appIndex>0</dcsat:appIndex>
+					</dcsat:tableCell>
+				</dcsat:item>
+			</template>
+		</template>
+		<groupTemplate>
+			<groupName>Подвал</groupName>
+			<templateType>Header</templateType>
+			<template>Макет1</template>
+		</groupTemplate>
+	</dataCompositionSchema>
+	<appearance xmlns="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="TableCellAppearance"/>
 </SchemaFile>
