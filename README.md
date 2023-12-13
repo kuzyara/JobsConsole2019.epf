@@ -2,7 +2,7 @@
 
 __[Скачать архив](https://github.com/kuzyara/JobsConsole2019.epf/releases/latest/download/JobsConsole2019.zip)__ КонсольЗаданий2019.epf __[Скачать обработку](https://github.com/kuzyara/JobsConsole2019.epf/raw/master/КонсольЗаданий2019.epf)__
 
-[![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]() [![telegram](https://patrolavia.github.io/telegram-badge/chat.png)](https://teleg.run/KuzNikAl)
+[![Github All Releases](https://img.shields.io/github/downloads/kuzyara/JobsConsole2019.epf/total.svg)]() [![telegram](https://patrolavia.github.io/telegram-badge/chat.png)](https://t.me/KuzNikAl)
 
 Адаптация консоли Душелова для 8.3
 * без модальных окон (РежимИспользованияМодальности = НеИспользовать)
